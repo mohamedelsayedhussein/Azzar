@@ -209,8 +209,8 @@ section#block-reveal {
 /* SERVICES */
 section.services {
   position: relative;
-  top: -13rem;
-  padding: 6rem 2rem;
+  top: -9rem;
+  padding: 3rem 2rem;
   width: 90vw;
   background: #333;
   z-index: 10;
@@ -521,19 +521,26 @@ section.unit-types button.slick-next:hover {
 }
 #contact-us .form-box select.form-control {
   color: #6C7571;
+  cursor: pointer;
 }
-select option {
+#contact-us .form-box select.form-control option {
   margin: 40px;
   background: rgba(0, 0, 0, 0.3);
   color: #3b3b3b;
   font-weight: 400;
 }
-
-select option:nth-child(odd) {
+#contact-us .form-box select.form-control option:checked {
+  background: #4d4d4d !important;
+  color: #fff;
+}
+#contact-us .form-box select.form-control option:focus {
+  outline: none;
+}
+#contact-us .form-box select.form-control option:nth-child(odd) {
   background: #ccc;
 }
 
-select option:nth-child(even) {
+#contact-us .form-box select.form-control option:nth-child(even) {
   background: #e0e0e0;
 }
 #contact-us .form-box textarea.form-control {
